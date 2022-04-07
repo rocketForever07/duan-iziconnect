@@ -1,6 +1,7 @@
 package com.iziconnect.service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Base of all service
@@ -18,7 +19,7 @@ public interface BaseService<E,T> {
     /**
      * Function for get entity from id
      * */
-    E get(T id);
+    Optional<E> get(T id);
 
     /**
      * Function for save entity to db
